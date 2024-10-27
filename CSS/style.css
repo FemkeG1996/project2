@@ -1,0 +1,59 @@
+.root {
+    padding: 0;
+    margin: 0;
+    --lichtblauw: #afc1d0;
+    --donkerblauw: #1c3f60;
+    /* font-family: ; */
+  }
+  
+  body{
+    background-color: #afc1d0;
+  }
+  @media (min-width: 768px)
+  {
+      .navbar-toggle-sm {
+          display: none;
+      }
+  }
+  @media (max-width: 768px)
+  {
+      .navbar-toggle-lg {
+          display: none;
+      }
+  }
+  .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  .navbar-toggler{
+    border: 1px solid white;
+  }
+  
+  .navbar{
+    background-color: #1c3f60;
+  
+  }
+  ul{
+    color: white;
+  }
+  .navbar-brand{
+    color: white;
+  }
+  .offcanvas{
+    background-color: #1c3f60;
+  }
+  .offcanvas-title{
+    color: white;
+    border-bottom: 2px solid white;
+  }
+  .nav-link{
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 50px;
+  }
+  .current{
+    font-size: large;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+  }
+  
