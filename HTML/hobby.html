@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home / Femke Gielen</title>
+        <title>Hobby's / Femke Gielen</title>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -23,56 +23,74 @@
     </head>
     <body>
 
-        <nav class="navbar fixed-top navbar-toggle-sm">
+        <!-- KLEINE NAVBAR -->
+        <nav class="navbar fixed-top navbar-toggle-xs">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Hobby's</a>
+
+                <img class="logo" src="../afbeeldingen/handtekening.png"
+                    alt="Logo">
+
+                <a class="navbar-brand" href="#">Home</a>
                 <button class="navbar-toggler" type="button"
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1"
-                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title"
-                            id="offcanvasNavbarLabel">Hobby's</h5>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul
-                            class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="cv.html">CV</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="hobby.html">Hobby's</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="ervaring.html">Ervaring</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="contact.html">Contact</a>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-            </nav>
 
-            <nav
-                class="navbar navbar-expand-lg justify-content-center navbar-toggle-lg">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="index.html">Home</a>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title"
+                        id="offcanvasNavbarLabel">Home</h5>
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul
+                        class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="hobby.html">Hobby's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="ervaring.html">Ervaring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- GROOT SCHERM NAVIGATIEBAR -->
+
+        <nav
+            class="navbar navbar-expand-md justify-content-center navbar-toggle-md">
+            <div class="flex-container">
+            <div class="navbar-nav">
+            
+                    <img class="logo" src="../afbeeldingen/handtekening.png"
+                        alt="Logo">
+                    <a class="nav-link current" href="index.html">Home</a>
                     <a class="nav-link" href="cv.html">CV</a>
-                    <a class="nav-link current" href="hobby.html">Hobby's</a>
+                    <a class="nav-link" href="hobby.html">Hobby's</a>
                     <a class="nav-link" href="ervaring.html">Ervaring</a>
                     <a class="nav-link" href="contact.html">Contact</a>
                 </div>

@@ -23,53 +23,79 @@
     </head>
     <body>
 
-        <nav class="navbar fixed-top navbar-toggle-sm">
+        <!-- VIDEO -->
+        <div class="fullscreen-video-container">
+            <video onloadstart="this.playbackRate = 0.75;" autoplay loop muted>
+                <source src="../afbeeldingen/video/201736-916310642.mp4"
+                    type="video/mp4">
+            </video>
+        </div>
+
+        <!-- KLEINE NAVBAR -->
+        <nav class="navbar fixed-top navbar-toggle-xs">
             <div class="container-fluid">
+
+                <img class="logo" src="../afbeeldingen/handtekening.png"
+                    alt="Logo">
+
                 <a class="navbar-brand" href="#">Home</a>
                 <button class="navbar-toggler" type="button"
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1"
-                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title"
-                            id="offcanvasNavbarLabel">Home</h5>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul
-                            class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="cv.html">CV</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="hobby.html">Hobby's</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="ervaring.html">Ervaring</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="contact.html">Contact</a>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-            </nav>
 
-            <nav
-                class="navbar navbar-expand-lg justify-content-center navbar-toggle-lg">
-                <div class="navbar-nav">
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title"
+                        id="offcanvasNavbarLabel">Home</h5>
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul
+                        class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="hobby.html">Hobby's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="ervaring.html">Ervaring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- GROOT SCHERM NAVIGATIEBAR -->
+
+        <nav
+            class="navbar navbar-expand-md justify-content-center navbar-toggle-md">
+            <div class="flex-container">
+            <div class="navbar-nav">
+            
+                    <img class="logo" src="../afbeeldingen/handtekening.png"
+                        alt="Logo">
                     <a class="nav-link current" href="index.html">Home</a>
                     <a class="nav-link" href="cv.html">CV</a>
                     <a class="nav-link" href="hobby.html">Hobby's</a>
@@ -78,5 +104,57 @@
                 </div>
             </div>
         </nav>
+
+        <div class="jumbotron">
+            <br>
+            <h1 class="display-4">Femke Gielen</h1>
+            <p class="lead">Programmer</p>
+            <hr class="my-4">
+            <div class="flex-container">
+                <p>Welkom op mijn website,
+                    ik ben Femke Gielen en ik zit op mijn eerste jaar graduaat
+                    programmeren te Thomas More Geel.
+                    Wil je meer weten over mij klik dan op de Klik hier knoppen
+                    of via de navigatiebar.
+                </p>
+            </div>
+            <img class="FemkeKlein" src="../afbeeldingen/mezelf.jpeg" alt>
+        </div>
+
+        <div class="row">
+            <div class="card col-xs-12  col-md-6 col-xl-3">
+                <div class="card-body">
+                    <h5 class="card-title">CV</h5>
+                    <p class="card-text">Wil je meer weten over mijn CV?</p>
+                    <a href="CV.html" class="btn btn-primary">Klik hier</a>
+                </div>
+            </div>
+            <div class="card col-xs-12 col-md-6 col-xl-3">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Hobby's
+                    </h5>
+                    <p class="card-text">Wil je meer weten over mijn hobby's?</p>
+                    <a href="hobby.html" class="btn btn-primary">Klik hier</a>
+                </div>
+            </div>
+
+                <div class="card col-xs-12 col-md-6 col-xl-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Ervaring</h5>
+                        <p class="card-text">Wil je meer weten over mijn
+                            ervaringen?</p>
+                        <a href="ervaring.html" class="btn btn-primary">Klik hier</a>
+                    </div>
+                </div>
+                <div class="card col-xs-12 col-md-6 col-xl-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact</h5>
+                        <p class="card-text">Wil je contact met me opnemen?</p>
+                        <a href="contact.html" class="btn btn-primary">Klik hier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
