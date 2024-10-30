@@ -23,80 +23,153 @@
     </head>
     <body>
 
-            <!-- KLEINE NAVBAR -->
-            <nav class="navbar fixed-top navbar-toggle-xs">
-                <div class="container-fluid">
-    
+        <!-- KLEINE NAVBAR -->
+        <nav class="navbar fixed-top navbar-toggle-xs">
+            <div class="container-fluid">
+
+                <img class="logo" src="../afbeeldingen/handtekening.png"
+                    alt="Logo">
+
+                <a class="navbar-brand" href="#">Contact</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title"
+                        id="offcanvasNavbarLabel">Contact</h5>
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul
+                        class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="hobby.html">Hobby's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="ervaring.html">Ervaring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- GROOT SCHERM NAVIGATIEBAR -->
+
+        <nav
+            class="navbar navbar-expand-md justify-content-center navbar-toggle-md">
+            <div class="flex-container">
+                <div class="navbar-nav">
+
                     <img class="logo" src="../afbeeldingen/handtekening.png"
                         alt="Logo">
-    
-                    <a class="navbar-brand" href="#">Contact</a>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar"
-                        aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="cv.html">CV</a>
+                    <a class="nav-link " href="hobby.html">Hobby's</a>
+                    <a class="nav-link" href="ervaring.html">Ervaring</a>
+                    <a class="nav-link current" href="contact.html">Contact</a>
                 </div>
-                <div class="offcanvas offcanvas-end" tabindex="-1"
-                    id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title"
-                            id="offcanvasNavbarLabel">Contact</h5>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul
-                            class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="cv.html">CV</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="hobby.html">Hobby's</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="ervaring.html">Ervaring</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-    
-                    </div>
-                </div>
-    
-            </nav>
-    
-            <!-- GROOT SCHERM NAVIGATIEBAR -->
-    
-            <nav
-                class="navbar navbar-expand-md justify-content-center navbar-toggle-md">
-                <div class="flex-container">
-                <div class="navbar-nav">
-                
-                        <img class="logo" src="../afbeeldingen/handtekening.png"
-                            alt="Logo">
-                        <a class="nav-link" href="index.html">Home</a>
-                        <a class="nav-link" href="cv.html">CV</a>
-                        <a class="nav-link " href="hobby.html">Hobby's</a>
-                        <a class="nav-link" href="ervaring.html">Ervaring</a>
-                        <a class="nav-link current" href="contact.html">Contact</a>
-                    </div>
-                </div>
-            </nav>
+            </div>
+        </nav>
 
-            
-    </body>
-</html>
+        <div class="fullscreen-video-container">
+            <video onloadstart="this.playbackRate = 0.35;" autoplay loop muted>
+                <source src="../afbeeldingen/video/201736-916310642.mp4"
+                    type="video/mp4">
+            </video>
+
+            <div class="formbackground">
+
+                <img src="../afbeeldingen/bloem.png" class="bloem"
+                    alt="afbeelding tekening bloem">
+
+                <img src="../afbeeldingen/bloem.png" class="bloem2"
+                    alt="afbeelding tekening bloem">
+
+                <form action="https://tm-statweb.be/sendmail.php" method="post">
+                    <div>
+                        <input type="text" name="studentemail" hidden
+                            class="form-control"
+                            value="femkegielen@outlook.com">
+                        <h1>Contactformulier</h1>
+                        <div class="input-group">
+                            <span class="input-group-text">Voornaam</span>
+                            <input type="text" name="naam" required
+                                aria-label="First name"
+                                class="form-control">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-text">Achternaam</span>
+                            <input type="text" name="achternaam" required
+                                aria-label="Last name"
+                                class="form-control">
+                        </div>
+                        <div class="mb-3n mt-3 mb-3">
+                            <label for="exampleFormControlInput1"
+                                class="form-label"></label>
+                            <input type="email" name="email"
+                                class="form-control"
+                                placeholder="Email"
+                                placeholder="voorbeeld@mail.com"
+                                pattern="[a-z0-9._%+-]+@example.com"
+                                required>
+                            <div>
+                            </div>
+                            <br>
+                            <select class="form-select"
+                                aria-label="Default select example">
+                                <option selected>Welke service wenst u te
+                                    bespreken?</option>
+                                <option value="1">Programming</option>
+                                <option value="2">Webdesign</option>
+                                <option value="3">Digital Art</option>
+                                <option value="3">Geen van bovenstaande</option>
+                            </select>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1"
+                                    class="form-label"></label>
+                                <textarea class="form-control" name="tekst"
+                                    required id="Textarea"
+                                    rows="3"></textarea>
+                                <br>
+                                <input type="hidden" name="studentemail"
+                                    value="femkegielen@outlook.be">
+                                <div>
+                                    <input type="hidden" name="studentemail"
+                                        value="femkegielen@outlook.com">
+                                    <div class="col-12 button-area">
+                                        <button class="btn submit btn-primary"
+                                            type="submit">Verstuur</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </body>
+                </html>

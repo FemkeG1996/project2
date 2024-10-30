@@ -122,9 +122,15 @@ body {
   .cvbackground {
     width: 85%;
     height: 100vh;
-    background-color: #1c3f60;
+      background-image: linear-gradient(
+    to right,
+    #0b253ad2,
+    #1c3f60f5,
+    #1c3f60f5,
+    #0b253ad2
+  );;
     margin-left: 7.5%;
-    opacity: 99%;
+    opacity: 100%;
     overflow: auto;
     scrollbar-width: none;
   }
@@ -420,4 +426,62 @@ ul {
   width: 400px;
 }
 
-/* CV */
+/* Contact */
+.formbackground{
+  width: 85vw;
+  margin-left: 7.5%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    #0b253ad2,
+    #1c3f60f5,
+    #1c3f60f5,
+    #0b253ad2
+  );;
+  position: absolute;
+}
+.bloem{
+  position: absolute;
+  margin-left: 17.3vw;
+  z-index: 1;
+  opacity: 75%;
+  width: 400px;
+  margin-top: 12.5vh;
+}
+.bloem2{
+  position: absolute;
+  margin-left: 48.5vw;
+  z-index: 1;
+  opacity: 75%;
+  width: 400px;
+  margin-top: 54vh;
+  transform: scale(-1);
+}
+form{
+  background-color: #afc1d0;
+  width: 50vw;
+  margin-left: 17.3vw;
+  margin-top: 12.5vh;
+  position: relative;
+  padding: 70px;
+}
+.input-group, .form-control,.form-select{
+  width: 500px;
+  margin-left: 10vw;
+}
+.submit{
+  margin-left: 10vw;
+}
+.input-group-text{
+  width: 110px;
+}
+#Textarea{
+  height: 200px;
+}
+form h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+:valid{
+  border-color: green;
+}
