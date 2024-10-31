@@ -4,9 +4,7 @@
   --lichtblauw: #afc1d0;
   --donkerblauw: #1c3f60;
 }
-
 body {
-  background-color: #afc1d0;
   padding: 0;
   margin: 0;
   width: 100vw;
@@ -24,7 +22,6 @@ body {
   .flex-container p {
     width: 250px;
   }
-
   .card {
     width: 15rem;
     text-align: center;
@@ -45,7 +42,7 @@ body {
     margin-bottom: 50px;
   }
   .titelCV {
-    margin-top: 80px;
+    margin-top: 65px;
     background-color: #afc1d0;
     padding: 5px;
     width: 100vw;
@@ -61,6 +58,16 @@ body {
     border: 2px solid #ff9f55;
     border-radius: 50%;
   }
+  .cv2card{
+    margin-right: 20px;
+  }
+  .cv2card .card-img-top {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  margin-left: 8.3vw;
+  margin-top: 10px;
+}
   /* Contact */
   .formbackground {
     width: 85vw;
@@ -133,6 +140,21 @@ body {
   }
   .logo {
     margin-left: 10px;
+  }
+  .cv2card .card-img-top {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    margin-left: 5.3vw;
+    margin-top: 10px;
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+  }
+  .cv2card{
+    margin-left: 55px;
+    margin-right: 50px;
   }
 
   /* Contact */
@@ -311,8 +333,11 @@ body {
   .right {
     left: 35%;
   }
-}
 
+.skillscard{
+  display: none;
+}
+}
 /* LG SCHERM */
 @media (min-width: 992px) {
   .navbar-toggle-xs {
@@ -418,7 +443,6 @@ body {
     border-color: green;
   }
 }
-
 /* XL SCHERM */
 @media (min-width: 1200px) {
   .navbar-toggle-lg {
@@ -441,70 +465,69 @@ body {
   .logo {
     margin-left: 10px;
   }
- /* Contact */
- .formbackground {
-  display: flex;
-  justify-content: center;
-  width: 85vw;
-  margin-left: 7.5%;
-  height: 100vh;
-  background-image: linear-gradient(
-    to right,
-    #0b253ad2,
-    #1c3f60f5,
-    #1c3f60f5,
-    #0b253ad2
-  );
-  position: absolute;
+  /* Contact */
+  .formbackground {
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    margin-left: 7.5%;
+    height: 100vh;
+    background-image: linear-gradient(
+      to right,
+      #0b253ad2,
+      #1c3f60f5,
+      #1c3f60f5,
+      #0b253ad2
+    );
+    position: absolute;
+  }
+  .bloem {
+    display: block;
+    position: absolute;
+    margin-left: 12.5vw;
+    z-index: 1;
+    opacity: 75%;
+    width: 400px;
+    margin-top: 10vh;
+  }
+  .bloem2 {
+    display: block;
+    position: absolute;
+    margin-left: 54.2vw;
+    z-index: 1;
+    opacity: 75%;
+    width: 400px;
+    margin-top: 54vh;
+    transform: scale(-1);
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    background-color: #afc1d0;
+    width: 75vw;
+    margin-top: 5vh;
+    position: relative;
+    padding: 70px;
+  }
+  .input-group,
+  .form-control,
+  .form-select {
+    width: 500px;
+  }
+  .input-group-text {
+    width: 110px;
+  }
+  #Textarea {
+    height: 200px;
+  }
+  form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  :valid {
+    border-color: green;
+  }
 }
-.bloem {
-  display: block;
-  position: absolute;
-  margin-left: 12.5vw;
-  z-index: 1;
-  opacity: 75%;
-  width: 400px;
-  margin-top: 10vh;
-}
-.bloem2 {
-  display: block;
-  position: absolute;
-  margin-left: 54.2vw;
-  z-index: 1;
-  opacity: 75%;
-  width: 400px;
-  margin-top: 54vh;
-  transform: scale(-1);
-}
-form {
-  display: flex;
-  justify-content: center;
-  background-color: #afc1d0;
-  width: 75vw;
-  margin-top: 5vh;
-  position: relative;
-  padding: 70px;
-}
-.input-group,
-.form-control,
-.form-select {
-  width: 500px;
-}
-.input-group-text {
-  width: 110px;
-}
-#Textarea {
-  height: 200px;
-}
-form h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-:valid {
-  border-color: green;
-}
-}
-
 /* XXL SCHERM */
 @media (min-width: 1400px) {
   .navbar-toggle-lg {
@@ -544,11 +567,11 @@ form h1 {
   }
 
   /* CONTACT */
-  .bloem2{
+  .bloem2 {
     margin-left: 59.8vw;
   }
 }
-@media (min-width: 2130px){
+@media (min-width: 2130px) {
   .bloem {
     display: block;
     position: absolute;
@@ -595,27 +618,23 @@ form h1 {
     text-align: center;
     margin-bottom: 20px;
   }
-  .submit{
+  .submit {
     font-size: 20px;
   }
   :valid {
     border-color: green;
   }
 }
-
 .row {
   display: flex;
   justify-content: center;
 }
-
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
 .navbar-toggler {
   border: 1px solid white;
 }
-
 .navbar {
   background-color: #1c3f60;
   width: 100vw;
@@ -679,7 +698,6 @@ ul {
   overflow: hidden;
   z-index: -100;
 }
-
 .fullscreen-video-container video {
   position: absolute;
   width: auto;
@@ -700,12 +718,45 @@ ul {
   border: 3px solid black;
   border-radius: 50%;
 }
-.dropdown-menu{
-background-color: #afc1d0;
+.dropdown-menu {
+  background-color: #afc1d0;
 }
+
 /* HOBBY'S */
 .carousel img {
   height: 500px;
   width: 400px;
 }
+ /* CV2 */
+ .titelCV2 {
+  margin-top: 65px;
+  background-color: #afc1d0;
+  padding: 5px;
+  width: 100vw;
+  text-align: center;
+}
+.cv2bg {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    #0b253ad2,
+    #1c3f60f5,
+    #1c3f60f5,
+    #0b253ad2
+  );
+  opacity: 100%;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.cv2card {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  margin-top: 55px;
 
+}
+.cv2card li{
+  color: #000;
+  text-align: left;
+}
