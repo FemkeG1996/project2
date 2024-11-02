@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hobby's / Femke Gielen</title>
+        <title>Contact / Femke Gielen</title>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -18,8 +18,8 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
             rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="../afbeeldingen/favicon.ico">
-        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="icon" type="image/x-icon" href="afbeeldingen/favicon.ico">
+        <link rel="stylesheet" href="CSS/style.css">
     </head>
     <body>
 
@@ -27,10 +27,10 @@
         <nav class="navbar fixed-top navbar-toggle-xs">
             <div class="container-fluid">
 
-                <img class="logo" src="../afbeeldingen/handtekening.png"
+                <img class="logo" src="afbeeldingen/handtekening.png"
                     alt="Logo">
 
-                <a class="navbar-brand" href="#">Hobby's</a>
+                <a class="navbar-brand" href="#">Contact</a>
                 <button class="navbar-toggler" type="button"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar"
@@ -45,7 +45,7 @@
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title"
-                        id="offcanvasNavbarLabel">Hobby's</h5>
+                        id="offcanvasNavbarLabel">Contact</h5>
                     <button type="button" class="btn-close"
                         data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
@@ -93,9 +93,9 @@
         <nav
             class="navbar navbar-expand-md justify-content-center navbar-toggle-md">
             <div class="flex-container">
-            <div class="navbar-nav">
-            
-                    <img class="logo" src="../afbeeldingen/handtekening.png"
+                <div class="navbar-nav">
+
+                    <img class="logo" src="afbeeldingen/handtekening.png"
                         alt="Logo">
                     <a class="nav-link" href="index.html">Home</a>
                     <li class="nav-item dropdown">
@@ -114,38 +114,85 @@
                                     href="cv2.html">Skills</a></li>
                         </ul>
                     </li>
-                    <a class="nav-link current" href="hobby.html">Hobby's</a>
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link " href="hobby.html">Hobby's</a>
+                    <a class="nav-link current" href="contact.html">Contact</a>
                 </div>
             </div>
         </nav>
 
-        <h1> Tekenen</h1>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../afbeeldingen/tekeningen/Elf.png" class="d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../afbeeldingen/tekeningen/Illustration19.png" class="d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../afbeeldingen/tekeningen/Illustration13.png" class="d-block" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </body>
-</html>
+        <div class="fullscreen-video-container">
+            <video onloadstart="this.playbackRate = 0.35;" autoplay loop muted>
+                <source src="afbeeldingen/video/201736-916310642.mp4"
+                    type="video/mp4">
+            </video>
+
+            <img src="afbeeldingen/bloem.png" class="bloem"
+                alt="afbeelding tekening bloem">
+
+            <img src="afbeeldingen/bloem.png" class="bloem2"
+                alt="afbeelding tekening bloem">
+            <div class="formbackground">
+
+                <form action="https://tm-statweb.be/sendmail.php" method="post">
+                    <div>
+                        <input type="text" name="studentemail" hidden
+                            class="form-control"
+                            value="femkegielen@outlook.com">
+                        <h1>Contactformulier</h1>
+                        <div class="input-group">
+                            <span class="input-group-text">Voornaam</span>
+                            <input type="text" name="naam" required
+                                aria-label="First name"
+                                class="form-control">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-text">Achternaam</span>
+                            <input type="text" name="achternaam" required
+                                aria-label="Last name"
+                                class="form-control">
+                        </div>
+                        <div class="mb-3n mt-3 mb-3">
+                            <label for="exampleFormControlInput1"
+                                class="form-label"></label>
+                            <input type="email" name="email"
+                                class="form-control"
+                                placeholder="Email"
+                                pattern="[a-z0-9._%+-]+@example.com"
+                                required>
+                            <div>
+                            </div>
+                            <br>
+                            <select class="form-select"
+                                aria-label="Default select example">
+                                <option selected>Welke service wenst u te
+                                    bespreken?</option>
+                                <option value="1">Programming</option>
+                                <option value="2">Webdesign</option>
+                                <option value="3">Digital Art</option>
+                                <option value="3">Geen van bovenstaande</option>
+                            </select>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1"
+                                    class="form-label"></label>
+                                <textarea class="form-control" name="tekst"
+                                    required id="Textarea"
+                                    rows="3"></textarea>
+                                <br>
+                                <input type="hidden" name="studentemail"
+                                    value="femkegielen@outlook.be">
+                                <div>
+                                    <input type="hidden" name="studentemail"
+                                        value="femkegielen@outlook.com">
+                                    <div class="col-12 button-area">
+                                        <button class="btn submit btn-primary"
+                                            type="submit">Verstuur</button>
+                                    </div>
+                       
+                                </div>
+                            </div>
+                        </div>
+                </form>
+        </body>
+                </html>

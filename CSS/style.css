@@ -95,10 +95,9 @@ body {
     justify-content: center;
     background-color: #afc1d0;
     width: 85vw;
-
     margin-top: 12.5vh;
     position: relative;
-    padding: 70px;
+    margin-bottom: 200px;
   }
   .input-group,
   .form-select {
@@ -533,6 +532,7 @@ body {
   :valid {
     border-color: green;
   }
+
 }
 /* XXL SCHERM */
 @media (min-width: 1400px) {
@@ -574,10 +574,10 @@ body {
 
   /* CONTACT */
   .bloem2 {
-    margin-left: 59.8vw;
+    margin-left: 59.7vw;
   }
 }
-@media (min-width: 2130px) {
+@media (min-width: 1920px) {
   .bloem {
     display: block;
     position: absolute;
@@ -590,7 +590,7 @@ body {
   .bloem2 {
     display: block;
     position: absolute;
-    margin-left: 64vw;
+    margin-left: 61.5vw;
     z-index: 1;
     opacity: 75%;
     width: 500px;
@@ -717,7 +717,6 @@ ul {
   padding-bottom: 10px;
   background-color: #afc1d0;
   opacity: 90%;
-  margin-bottom: 60px;
 }
 .FemkeKlein {
   height: 200px;
@@ -729,10 +728,6 @@ ul {
 }
 
 /* HOBBY'S */
-.carousel img {
-  height: 500px;
-  width: 400px;
-}
  /* CV2 */
  .titelCV2 {
   margin-top: 65px;
@@ -787,7 +782,6 @@ z-index: -10;
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 .carousel{
   background-color: #1c3f60;
@@ -796,4 +790,36 @@ z-index: -10;
 .carousel-item img{
   width: 150px;
   height: 160px;
+}
+#carousel1{
+  height: auto;
+}
+.tekening{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: auto;
+}
+.tekening img{
+ width: auto;
+ height: auto;
+ object-fit: cover;
+ overflow: auto;
+}
+.gamen img{
+  width: 300px;
+  height: 200px;
+  overflow: auto;
+  background-color: white;
+}
+.footer{
+  margin-top: 20px;
+  height: 55px;
+  opacity: 80%;
+  width: 100vw;
+  background-color: #afc1d0;
+}
+#LinkedIn, #outlook, #facebook{
+  height: 30px;
+  margin-right: 10px;
 }
